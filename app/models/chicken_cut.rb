@@ -1,0 +1,2 @@
+class ChickenCut < ApplicationRecord
+end
