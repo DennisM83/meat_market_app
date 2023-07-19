@@ -1,0 +1,32 @@
+<div id="<%= dom_id chicken_cut %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= chicken_cut.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Muscle anatomy:</strong>
+    <%= chicken_cut.muscle_anatomy %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Description:</strong>
+    <%= chicken_cut.description %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Cut type:</strong>
+    <%= chicken_cut.cut_type %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Slicing instructions:</strong>
+    <%= chicken_cut.slicing_instructions %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this chicken cut", chicken_cut, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this chicken cut', edit_chicken_cut_path(chicken_cut), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
